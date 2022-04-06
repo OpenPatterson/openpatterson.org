@@ -36,6 +36,7 @@ sass:
 plugins:
   - jekyll-environment-variables
 
+source: src
 exclude:
   - Gemfile
   - Gemfile.lock
