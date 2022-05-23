@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="../dist/output.css" rel="stylesheet" />
 
+  <!-- MailerLite Universal -->
+  <script>
+    (function (w, d, e, u, f, l, n) {
+      w[f] = w[f] || function () {
+        (w[f].q = w[f].q || [])
+          .push(arguments);
+      }, l = d.createElement(e), l.async = 1, l.src = u,
+        n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+    })
+      (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+    ml('account', '56097');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 
 <body>
@@ -195,8 +208,7 @@
       <!-- Mailing List -->
       <div class="flex flex-col justify-between">
         <div class="flex space-x-3">
-          <a href="http://eepurl.com/h2DkPr" target="_blank"
-          class="px-6 py-2 text-white  rounded-full baseline bg-rose-red hover:text-rose-red hover:bg-neutral-off-white ">Sign Up For Our Newsletter</a>
+          <div class="ml-embedded" data-form="fyfFFQ"></div>
         </div>
       </div>
     </div>
