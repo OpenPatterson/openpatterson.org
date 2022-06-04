@@ -1,1 +1,0 @@
-# openpatterson.org

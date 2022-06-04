@@ -1,0 +1,58 @@
+<div>
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+                <a href="/"><img src="/assets/icons/logo.svg" alt="" width="260" height="40" /></a>
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="/about-us"
+                    class="hidden md:block p-3 px-6 pt-2 rounded-lg baseline hover:bg-primary hover:text-white transition-all duration-100 ease-linear">About
+                    Us</a>
+                <a href="/latest"
+                    class="hidden md:block p-3 px-6 pt-2 rounded-lg baseline hover:bg-primary hover:text-white transition-all duration-100 ease-linear">Latest</a>
+                <a href="join-us"
+                    class="hidden md:block p-3 px-6 pt-2 rounded-lg baseline hover:bg-primary hover:text-white transition-all duration-100 ease-linear">Join
+                    Us</a>
+                <a href="/projects"
+                    class="hidden md:block p-3 px-6 pt-2 rounded-lg baseline hover:bg-primary hover:text-white transition-all duration-100 ease-linear">Projects</a>
+                <a href="/calendar"
+                    class="hidden md:block p-3 px-6 pt-2 rounded-lg baseline hover:bg-primary hover:text-white transition-all duration-100 ease-linear">Calendar</a>
+            </div>
+            <!-- Button -->
+            <a href="/donate"
+                class="hidden lg:block p-3 px-6 pt-2 text-white bg-primary rounded-full baseline hover:bg-primary-light">Donate</a>
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+            <div id="menu"
+                class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="/about-us">About Us</a>
+                <a href="/latest">Latest</a>
+                <a href="/join-us">Join Us</a>
+                <a href="/projects">Projects</a>
+                <a href="/calendar">Calendar</a>
+                <a href="/donate">Donate</a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const btn = document.getElementById('menu-btn')
+        const nav = document.getElementById('menu')
+
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open')
+            nav.classList.toggle('flex')
+            nav.classList.toggle('hidden')
+        })
+    </script>
+</div>
