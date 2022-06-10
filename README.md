@@ -1,6 +1,9 @@
 # Open Patterson
 Uses [Jekyll + Tailwind Starter](https://github.com/stefcoetzee/jekyll-tailwind/)
 
+## TODO & Notes
+- .circleci currently unused
+- Currently deploying with Netlify, consider using CircleCI + AWS S3 (+AWS CloudFront?)
 
 ## Usage
 
