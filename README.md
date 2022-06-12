@@ -1,4 +1,7 @@
 # Open Patterson
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ffdeadf6-3b05-47ca-9cba-3224c943271b/deploy-status)](https://app.netlify.com/sites/aquamarine-piroshki-ada614/deploys)  
+
+
 Uses [Jekyll + Tailwind Starter](https://github.com/stefcoetzee/jekyll-tailwind/)
 
 ## TODO & Notes
