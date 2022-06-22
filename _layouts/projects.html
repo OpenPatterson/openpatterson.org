@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
+
 <body>
-  {% include header.html %}
+    {% include header.html %}
 
-  <section id="projects" class="w-2/3 m-auto">
-    <div class="text-4xl font-bold">Projects</div>
+    <!-- Calendar Section -->
+    <section id="projects">
+        <div class="flex-col">
+            <div class="text-4xl text-center font-bold w-2/3 pb-10 m-auto">Projects (Coming Soon)</div>
 
-  </section>
+            <!-- {{ project.project_name }}
+            {{ project.project_type }}
+            {{ project.date | date: '%m/%y'}}
+            {{ project.blurb }} -->
+            <div class="grid grid-cols-1 gap-x-3 gap-y-3 pb-10 md:grid-cols-3">
+                {% for project in site.projects %}
+                <div class="flex-col px-10">
+                    <img src="{{project.img_src}}" alt="" class="rounded-lg">
+                    <div class="font-bold">{{ project.project_name }} &bull; {{ project.date | date: '%m/%y' }} </div>
+                    <div class="font-bold">{{ project.project_type }} </div>
+                    <div class="font-base">{{ project.blurb }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </section>
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-  {% include foot.html %}  
+    {% include foot.html %}
 
 </body>
 
