@@ -2,7 +2,7 @@
 layout: post
 title: "We Are Open Patterson"
 subtitle: "Volunteer with us today!"
-date: 2022-07-01 07:00:00AM
+date: 2021-07-01 07:00:00AM
 date-written: "July 1, 2022"
 blurb: ""
 hero_image: ""
