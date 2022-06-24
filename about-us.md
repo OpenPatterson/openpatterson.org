@@ -17,10 +17,10 @@ title: "About Us"
         <div class="text-2xl text-center font-bold">Brigade Captains</div>
         <div class="items-center justify-center flex py-2">
             <a class="px-2">Carlos Eduardo Ortega</a>
-            <a href="#" target="_blank">
+            <a href="https://www.linkedin.com/in/soycarlos/" target="_blank">
                 <img src="/assets/icons/linkedin-logo.png" alt="LinkedIn" class="px-1 h-5" />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://carlos.soy/" target="_blank">
                 <img src="/assets/icons/globe.svg" alt="Website" class="px-1 h-7" />
             </a>
         </div>
