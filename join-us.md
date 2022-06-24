@@ -6,21 +6,36 @@ title: "Join Us"
 <div>
   <!-- Join Us Section -->
   <section id="join_us">
-    <div class="container flex flex-col-reverse px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+      <div class="container flex flex-col px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
         <!-- For Volunteers-->
         <div class="flex flex-col mb-32 md:w-1/2">
             <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-center">
                 Volunteers
             </h1>
+            <p class="px-2 py-2">Open Patterson has an open-door policy and we accept new volunteers year-round. Whether you have an interest in tech or not, you most likely have skills you can contribute to the community.</p><br>
+            <p class="px-2 py-2">Here are a few ways you can help:
+            <ul class="list-disc px-2">
+            <li>Back-End Engineering</li>
+            <li>Front-End Engineering</li>
+            <li>Web Development</li>
+            <li>Data Analysis & Visualization</li>
+            <li>Policy Advocacy</li>
+            <li>Marketing & Social Media Management</li>
+            <li>Language Translation (e.g. Spanish)</li>
+            <li>Community Building</li>
+            <li>Community Outreach</li>
+            </ul>
+            </p>
         </div>
         <!-- For Community Partners -->
         <div class="flex flex-col mb-32 md:w-1/2">
           <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-center">
               Community Partners
           </h1>
-          <h2 class="max-w-md text-1xl text-center md:text-2xl md:text-center">
+          <h2 class="max-w-md text-1xl font-bold text-center md:text-2xl md:text-center">
             Nonprofits & Government Agencies
           </h2>
+          <p>Lorem ipsum</p>
       </div>
     </div>
   </section>
