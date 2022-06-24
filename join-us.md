@@ -27,9 +27,19 @@ title: "Join Us"
                     <li>Community Building</li>
                     <li>Community Outreach</li>
                 </ul>
+                <div class="font-bold text-2xl pt-2">Onboarding Process</div>
+                Because we want, both, former and current Patterson residents/supporters to be able to participate, we
+                are <div class="font-bold">remote-first.</div>
+                <ol class="list-decimal">
+                    <li>Submit registration form</li>
+                    <li>Receive email scheduling virtual meeting with someone from leadership team, and possibly other
+                        new members.</li>
+                    <li>Based off your interests, goals, and skills, Open Patterson leadership will pair you up with a project.</li>
+                </ol>
                 </p>
                 <a href="https://airtable.com/shrvYR5EoirGASMJ1" target="_blank"
-                class="px-6 py-2 text-white bg-primary rounded-full m-auto hover:bg-primary-light">Register to be a volunteer</a>
+                    class="px-6 py-2 text-white bg-primary rounded-full m-auto hover:bg-primary-light">Register to be a
+                    volunteer</a>
             </div>
             <!-- For Community Partners -->
             <div class="flex flex-col mb-32 md:w-1/2">
@@ -39,18 +49,26 @@ title: "Join Us"
                 <h2 class="max-w-md text-1xl font-bold text-center md:text-2xl md:text-center">
                     Nonprofits & Government Agencies
                 </h2>
-                <p class="px-2 py-2">Our goal is to build tools to serve the community. However, we acknowledge that we are far from the first with the goal of serving the community. As such, we prioritize partnering up with local government and nonprofits who have been putting in the work.</p><br>
+                <p class="px-2 py-2">Our goal is to build tools to serve the community. However, we acknowledge that we
+                    are far from the first with the goal of serving the community. As such, we prioritize partnering up
+                    with local government and nonprofits who have been putting in the work.</p><br>
                 <p class="px-2 py-2">Check out some of the projects other brigades have done:
                 <ul class="list-disc px-2">
-                    <li><a href="https://sfbrigade.notion.site/Current-Projects-4fefa377e1424ff0b59230b9c160e6a4" target="_blank" class="underline">Code for San Francisco</a></li>
-                    <li><a href="https://www.codeforsanjose.org/projects" target="_blank" class="underline">Code for San Jose</a></li>
-                    <li><a href="https://www.hackforla.org/projects/" target="_blank" class="underline">Hack for LA</a></li>
-                    <li><a href="https://openoakland.org/projects/" target="_blank" class="underline">OpenOakland</a></li>
-                    <li><a href="https://opensandiego.org/projects" target="_blank" class="underline">Open San Diego</a></li>
+                    <li><a href="https://sfbrigade.notion.site/Current-Projects-4fefa377e1424ff0b59230b9c160e6a4"
+                            target="_blank" class="underline">Code for San Francisco</a></li>
+                    <li><a href="https://www.codeforsanjose.org/projects" target="_blank" class="underline">Code for San
+                            Jose</a></li>
+                    <li><a href="https://www.hackforla.org/projects/" target="_blank" class="underline">Hack for LA</a>
+                    </li>
+                    <li><a href="https://openoakland.org/projects/" target="_blank" class="underline">OpenOakland</a>
+                    </li>
+                    <li><a href="https://opensandiego.org/projects" target="_blank" class="underline">Open San Diego</a>
+                    </li>
                 </ul>
                 </p>
                 <a href="https://airtable.com/shrOLDtBa1cLqW6JE" target="_blank"
-                class="px-6 py-2 text-white bg-primary rounded-full m-auto hover:bg-primary-light">Submit Partnership Form</a>
+                    class="px-6 py-2 text-white bg-primary rounded-full m-auto hover:bg-primary-light">Submit
+                    Partnership Form</a>
             </div>
         </div>
     </section>
