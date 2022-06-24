@@ -28,6 +28,8 @@ title: "Join Us"
                     <li>Community Outreach</li>
                 </ul>
                 </p>
+                <a href="https://airtable.com/shrvYR5EoirGASMJ1" target="_blank"
+                class="px-6 py-2 text-white bg-primary rounded-full m-auto hover:bg-primary-light">Register to be a volunteer</a>
             </div>
             <!-- For Community Partners -->
             <div class="flex flex-col mb-32 md:w-1/2">
@@ -47,6 +49,8 @@ title: "Join Us"
                     <li><a href="https://opensandiego.org/projects" target="_blank" class="underline">Open San Diego</a></li>
                 </ul>
                 </p>
+                <a href="https://airtable.com/shrOLDtBa1cLqW6JE" target="_blank"
+                class="px-6 py-2 text-white bg-primary rounded-full m-auto hover:bg-primary-light">Submit Partnership Form</a>
             </div>
         </div>
     </section>
