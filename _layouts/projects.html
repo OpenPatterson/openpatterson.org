@@ -18,8 +18,8 @@
                 {% for project in site.projects %}
                 <div class="flex-col px-10">
                     <img src="{{project.img_src}}" alt="" class="rounded-lg">
-                    <div class="font-bold">{{ project.project_name }} &bull; {{ project.date | date: '%m/%y' }} </div>
-                    <div class="font-bold">{{ project.project_type }} </div>
+                    <div class="font-bold">{{ project.project_name }} &bull; {{ project.status }}</div>
+                    <div class="font-bold">{{ project.project_type }} &bull; {{ project.date_started | date: '%m/%y' }} - {{ project.date_ended | date: '%m/%y' }} </div>
                     <div class="font-base">{{ project.blurb }}</div>
                 </div>
                 {% endfor %}

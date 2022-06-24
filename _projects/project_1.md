@@ -1,8 +1,10 @@
 ---
-project_name: Lorem Ipsum
-project_type: UI/UX
-date: "June 2022"
+project_name: Open Patterson Website
+project_type: Web Dev
+date_started: "June 2022"
+date_ended: Present
+status: Active
 img_src: "assets/icons/idea.jpg"
-blurb: We love Patterson so we did this and that and this and that.
+blurb: OpenPatterson.org is the first impression folks have of our group, so we try to keep this website up to date with the latest info.
 ---
 This is an example
