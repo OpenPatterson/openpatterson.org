@@ -2,7 +2,7 @@
 layout: default
 title: "About Us"
 ---
-
+<div>
 <section id="about-us">
     <div class="flex-col w-2/3 m-auto">
         <div class="text-4xl py-10 text-center font-bold">About Us</div>
@@ -76,3 +76,4 @@ title: "About Us"
         <p class="text-center">As we launch and begin to grow, our focus is not only on those who already have the skills needed to contribute, but those interested in learning them. That is why we happily invite folks who have 10 years of experience or just a month, we want to be able to provide the space for folks to learn. In doing so, we can begin to foster a community of creators, engineers, leaders, and advocates who will continue to pay it forward in the future.</p>
     </div>
 </section>
+</div>
