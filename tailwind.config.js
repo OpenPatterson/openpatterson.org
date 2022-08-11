@@ -17,7 +17,7 @@ module.exports = {
         'neutral-off-white': '#efefef', 
         'rose-red': '#db2b39', 
         'navy-blue': '#29335c', 
-        'primary': '#fcab4e',
+        'primary': '#ffa01c',
         'primary-light': '#fcc88d', 
         'neutral-off-black': '#1C211E'
       }
