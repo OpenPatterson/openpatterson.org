@@ -14,8 +14,8 @@ hero_header: "We are Open Patterson"
         <p class="text-left md:text-left">
           Open Patterson is a
           <a class="text-blue-400 underline" href="https://brigade.codeforamerica.org/" target="_blank">Code For America
-            Brigade</a>. We are volunteers interested in making Patterson's local
-          government more equitable, transparent and accessible to all peoples
+            Brigade</a>. We are volunteers interested in making Patterson & the Greater Stanislaus County's
+          government and community more equitable, transparent and accessible to all peoples
           using technology and centering people. We are interested in the
           application of technology and data to serve our communities. We
           encourage the involvement of collaboration between our local
