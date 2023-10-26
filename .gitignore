@@ -7,10 +7,11 @@ _site/
 .bundle/
 .ruby-version
 *.gem
-Gemfile.lock
+
 
 # JavaScript
 node_modules
 
 # macOS
 .DS_Store
+assets/.DS_Store
