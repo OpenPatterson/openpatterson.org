@@ -5,7 +5,7 @@ hero_header: "We are Open Patterson"
 ---
 
   <!-- About Section -->
-  <section id="about flex flex-col min-h-screen">
+  <section id="about">
     <div class="container flex flex-col items-center mx-auto px-50 mt-10 space-y-0 md:space-y-0">
       <div class="flex flex-col mb-32 space-y-12">
         <h1 class="max-w-md text-4xl font-bold mx-auto text-center md:text-5xl">
