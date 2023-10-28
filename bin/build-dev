@@ -1,3 +1,0 @@
-#!/bin/sh
-
-bundle exec jekyll build --profile --config _config.yml

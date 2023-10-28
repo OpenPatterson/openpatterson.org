@@ -1,17 +1,2 @@
-# Jekyll
-_site/
-*-cache/
-.jekyll-metadata
 
-# Ruby
-.bundle/
-.ruby-version
-*.gem
-
-
-# JavaScript
-node_modules
-
-# macOS
 .DS_Store
-assets/.DS_Store

@@ -1,4 +1,0 @@
----
-layout: donate
-title: "Donate"
----
