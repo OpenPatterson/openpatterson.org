@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-<body>
+{% include head.html %}
+
+<body class="flex flex-col min-h-screen">
+
   {% include header.html %}
 
   {% include hero.html %}
 
-  {{content}}
-
+  <main class="flex-grow">
+    {{content}}
+  </main>
+  
   {% include footer.html %}
 
-  {% include foot.html %}  
-
+  {% include foot.html %}
 </body>
 
 </html>
