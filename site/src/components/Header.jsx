@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Projects', href: '/projects' },
 ]
 
-export default function Example() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (

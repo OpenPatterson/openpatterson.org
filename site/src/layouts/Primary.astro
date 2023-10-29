@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+
 interface Props {
 	title: string;
 }
@@ -16,7 +19,11 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="flex flex-col min-h-screen">
+		<Header client:load />
+		<main class="flex-1">
+			<slot />
+		</main>
+		<Footer client:load />
 	</body>
 </html>
