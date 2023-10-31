@@ -19,7 +19,7 @@ const navigation = {
           fill="currentColor"
           viewBox="0 0 24 24"
           {...props}
-          className="h-10 w-auto"
+          className="h-10 w-auto 2xl:h-15"
         >
           <path
             fillRule="evenodd"
@@ -38,7 +38,7 @@ const navigation = {
           fill="currentColor"
           viewBox="0 0 24 24"
           {...props}
-          className="h-10 w-auto"
+          className="h-10 w-auto 2xl:h-15"
         >
           <path
             fillRule="evenodd"
@@ -63,7 +63,7 @@ export default function Footer() {
             <div key={item.name} className="pb-6">
               <a
                 href={item.href}
-                className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                className="text-sm leading-6 text-gray-600 2xl:text-xl hover:text-gray-900"
               >
                 {item.name}
               </a>
@@ -83,16 +83,16 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500 flex justify-center items-center">
+        <p className="mt-10 text-center text-xs leading-5 text-gray-500 flex justify-center items-center 2xl:text-xl">
           We{" "}
           <img
             src="../../icons/apricot.svg"
-            className="h-3 w-auto px-1"
+            className="h-3 w-auto px-1 2xl:h-6"
             alt=""
           />{" "}
           Patterson
         </p>
-        <p className="text-center text-xs leading-5 text-gray-500">
+        <p className="text-center text-xs leading-5 text-gray-500 2xl:text-xl">
           &copy; 2023 Open Patterson. All rights reserved.
         </p>
       </div>
