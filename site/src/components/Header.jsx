@@ -14,11 +14,11 @@ export default function Header() {
 
   return (
     <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 2xl:max-w-[90%]" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Open Patterson</span>
-            <img className="h-20 w-auto" src="../../icons/small-logo.svg" alt="" />
+            <img className="h-20 w-auto 2xl:h-40" src="../../icons/small-logo.svg" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -33,13 +33,13 @@ export default function Header() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 rounded-lg p-3 px-6 pt-2 hover:bg-primary hover:text-white">
+            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 rounded-lg p-3 px-6 pt-2 2xl:text-3xl hover:bg-primary hover:text-white">
               {item.name}
             </a>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/donate" className="text-sm font-semibold leading-6 rounded-lg p-3 px-6 pt-2 bg-primary text-white hover:bg-primary-light">
+          <a href="/donate" className="text-sm font-semibold leading-6 rounded-lg p-3 px-6 pt-2 bg-primary text-white 2xl:text-3xl hover:bg-primary-light">
             Donate
           </a>
         </div>
