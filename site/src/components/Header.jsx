@@ -39,7 +39,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/donate" className="text-sm font-semibold leading-6 rounded-lg p-3 px-6 pt-2 bg-primary text-white 2xl:text-3xl hover:bg-primary-light">
+          <a href="https://opencollective.com/openpatterson" target="_blank" className="text-sm font-semibold leading-6 rounded-lg p-3 px-6 pt-2 bg-primary text-white 2xl:text-3xl hover:bg-primary-light">
             Donate
           </a>
         </div>
@@ -78,7 +78,8 @@ export default function Header() {
                   </a>
                 ))}
                 <a
-                  href="/donate"
+                  href="https://opencollective.com/openpatterson"
+                  target="_blank"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-primary-super-light"
                 >
                   Donate
