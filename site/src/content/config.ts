@@ -18,5 +18,5 @@ const latestCollection = defineCollection({
 }); 
 
 export const collections = {
-    'latest': latestCollection,
+    latest: latestCollection,
 };

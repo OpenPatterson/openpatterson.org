@@ -1,0 +1,26 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Primary.astro';
+
+export async function getStaticPaths() {
+    const publishedLatestEntries = await getCollection('latest');
+    return publishedLatestEntries.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+
+type Props = {
+  entry: CollectionEntry<"latest">;
+};
+
+const { entry } = Astro.props;
+console.log('entry', entry);
+const { Content } = await entry.render();
+---
+<Layout title="Open Patterson">
+	<main>
+        <h1>{entry.data.title}</h1>
+        <Content />
+    </main>
+</Layout>
