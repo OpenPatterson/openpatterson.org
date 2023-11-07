@@ -1,16 +1,11 @@
 ---
-layout: post
+isDraft: False
 title: "We Are Open Patterson"
 subtitle: "Volunteer with us today!"
 reading_duration: 1
-date: 2022-07-13 07:00:00AM
-date-written: "July 13, 2022"
+publishDate: 07/13/2022
 blurb: "Announcing the launch of Open Patterson, a Code for America Brigade."
 hero_image: "assets/blog/announcing-open-patterson/Open Patterson Logo.png"
-hero_image_owner: ""
-hero_image_owner_url: ""
-hero_image_location: ""
-hero_image_location_url: ""
 ---
 
 <h2>Before We Introduce Ourselves</h2>

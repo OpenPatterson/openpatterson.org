@@ -1,16 +1,12 @@
 ---
-layout: post
+isDraft: False
 title: "Introducing BPCS"
 subtitle: "The Better Patterson Council Site"
 reading_duration: 1
-date: 2023-04-10 07:00:00AM
-date-written: "April 10, 2023"
+publishDate: 04/10/2023
 blurb: "We're excited to introduce BPCS - the Better Patterson Council Site. Our goal is to provide an easy-to-use alternative to the official site that's accessible to everyone in the community."
 hero_image: "assets/blog/announcing-bpcs/bpcs-logo.png"
 hero_image_owner: "Open Patterson"
-hero_image_owner_url: ""
-hero_image_location: ""
-hero_image_location_url: ""
 ---
 Introducing [BPCS - the Better Patterson Council Site](https://council.openpatterson.org/)! We're excited to provide an alternative to the official Patterson Council Site that's easier to use and more accessible for everyone in the community.
 
