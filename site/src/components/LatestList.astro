@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+var publishedLatestEntries = await getCollection('latest', ({ data }) => {
+    return data.isDraft !== true;
+});
+
+
+publishedLatestEntries = publishedLatestEntries.sort((a, b) => {
+    const dateA = new Date(a.data.publishDate);
+    const dateB = new Date(b.data.publishDate);
+    return dateB.getTime() - dateA.getTime();
+});
+
+
+---
+<div class="text-4xl font-bold py-10 text-center">Latest Updates</div>
+{publishedLatestEntries.map((latestPostEntry) => (
+<div class="m-auto w-full px-2 md:px-0 md:w-2/3">
+    <ul>
+        <div class="flex-col">
+            <li>
+                <a href={`/latest/${latestPostEntry.slug}`} class="font-bold text-2xl hover:underline md:text-4xl">{latestPostEntry.data.title}</a>
+                <a href={`/latest/${latestPostEntry.slug}`} class="flex">{latestPostEntry.data.publishDate}</a>
+                <a href={`/latest/${latestPostEntry.slug}`} class="flex pb-10">{latestPostEntry.data.blurb}</a>
+            </li>
+        </div>
+    </ul>
+</div>
+))}
