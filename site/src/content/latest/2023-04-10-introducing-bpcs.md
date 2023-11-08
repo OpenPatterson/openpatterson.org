@@ -5,7 +5,7 @@ subtitle: "The Better Patterson Council Site"
 reading_duration: 1
 publishDate: 04/10/2023
 blurb: "We're excited to introduce BPCS - the Better Patterson Council Site. Our goal is to provide an easy-to-use alternative to the official site that's accessible to everyone in the community."
-hero_image: "/public/blog/announcing-bpcs/bpcs-logo.png"
+hero_image: "/blog/announcing-bpcs/bpcs-logo.png"
 hero_image_owner: "Open Patterson"
 ---
 Introducing [BPCS - the Better Patterson Council Site](https://council.openpatterson.org/)!

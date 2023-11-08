@@ -5,7 +5,7 @@ subtitle: "Volunteer with us today!"
 reading_duration: 1
 publishDate: 07/13/2022
 blurb: "Announcing the launch of Open Patterson, a Code for America Brigade."
-hero_image: "/public/blog/announcing-openPatterson/open-patterson.png"
+hero_image: "/blog/announcing-openPatterson/open-patterson.png"
 ---
 
 <h2>Before We Introduce Ourselves</h2>
