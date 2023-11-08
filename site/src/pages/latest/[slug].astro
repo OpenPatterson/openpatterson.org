@@ -15,7 +15,6 @@ type Props = {
 };
 
 const { entry } = Astro.props;
-console.log('entry', entry);
 const { Content } = await entry.render();
 ---
 <Layout title="Open Patterson">
