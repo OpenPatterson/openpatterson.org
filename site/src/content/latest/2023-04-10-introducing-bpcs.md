@@ -8,7 +8,8 @@ blurb: "We're excited to introduce BPCS - the Better Patterson Council Site. Our
 hero_image: "assets/blog/announcing-bpcs/bpcs-logo.png"
 hero_image_owner: "Open Patterson"
 ---
-Introducing [BPCS - the Better Patterson Council Site](https://council.openpatterson.org/)! We're excited to provide an alternative to the official Patterson Council Site that's easier to use and more accessible for everyone in the community.
+Introducing [BPCS - the Better Patterson Council Site](https://council.openpatterson.org/)!
+We're excited to provide an alternative to the official Patterson Council Site that's easier to use and more accessible for everyone in the community.
 
 Our goal with BPCS is to provide an online hub for Patterson residents to stay informed and engaged with their local government. Whether you're interested in the city council meeting schedule or local government initiatives, BPCS has got you covered. We want to make sure that everyone in the community has access to important information and resources, and our hope is that BPCS will serve as a valuable tool for Patterson residents.
 
