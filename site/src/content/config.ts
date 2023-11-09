@@ -17,6 +17,22 @@ const latestCollection = defineCollection({
     })
 }); 
 
+
+const projectCollection = defineCollection({
+    type:'data',
+    schema: z.object({
+        project_name: z.string(),
+        project_type: z.string(),
+        date_started: z.string(),
+        date_ended: z.string(),
+        status: z.string(),
+        img_src: z.string(),
+        alt: z.string(),
+        blurb: z.string(),
+    })
+});
+
 export const collections = {
     latest: latestCollection,
+    projects: projectCollection,
 };
