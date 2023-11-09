@@ -12,6 +12,9 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
+    speedInsights: {
+      enabled: true,
+    },
   }),
   renderers: ["@astrojs/renderer-react"],
 });
