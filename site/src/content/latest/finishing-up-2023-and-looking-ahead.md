@@ -1,0 +1,45 @@
+---
+isDraft: false
+title: Finishing Up 2023 and Looking Ahead
+subtitle: As the end of 2023 approaches, we'd like to provide an update on what
+  we have done, what we have learned, and what we have planned for next year.
+publishDate: 12/21/2023
+blurb: As the end of 2023 approaches, we'd like to provide an update on what we
+  have done, what we have learned, and what we have planned for next year.
+hero_image: /blog/finishing-up-2023/open-patterson.png
+hero_image_owner: Open Patterson
+reading_duration: 3
+---
+
+As the end of 2023 approaches, we'd like to provide an update on what we have done, what we have learned, and what we have planned for next year.
+
+# Our Wins
+We are celebrating 3 main wins:
+
+First, we made and launched our first project, BPCS, the Better Patterson Council Site. You can find that here ([link](https://council.openpatterson.org/)). Our alternative to our town's Council Site, which we find heavy, unattractive, and sometimes hard to navigate. Check out our launch blog post [here](https://www.openpatterson.org/latest/2023-04-10-introducing-bpcs) if you would like to read more.
+
+Second, we found our first project partner in the Center for Human Services, one of the largest nonprofits in Stanislaus County. This is still an in-progress project so we will share more later.
+
+Finally, the fact that we still exist is a win in our book. Like many organizations previously in Code for America's Brigade Network, we were not sure if we'd continue to exist. Luckily, we were able to find a new home here with the Open Collective.
+
+As a bonus, we have been able to achieve all these wins without spending any money, which is good considering we haven't had any money come in yet, but we will talk about that more in the next section.
+
+# Our Learnings
+We have learned that we need to focus more on building out our community. We continue to be a tiny team, so tiny that each person is critical and if someone is unavailable our projects can easily fall off the rails. So, for 2024 we plan on working on growing and building out the community to have some level of redundancy and make sure no one has too much work on their plate.
+
+Also, despite not spending any money which is good because we have none, this has been a limiting factor. It has made us creative in stretching out the free tiers of many developer services, but we have realized we must put some work into fundraising so that money is not as much of a limiting factor. Luckily, we have some folks tentatively pledged to donate next year, so we hope to share more soon.
+
+# Looking Forward
+Our first goal is to finish our work, or at least the first phase of work, with the Center for Human Services ASAP. We hope they will become a long-term partner as we begin to partner with more local nonprofits.
+
+Second, we hope to recruit some college students to get them more involved in the community and to start building out more talent locally. Despite having several colleges in our area, the technology scene is severely lacking. We hope to partner with these students and other local organizations to start improving it.
+
+Finally, AI has been the hot new thing this year, but it does not seem to have made much impact yet in the Civic Tech scene. We have some ideas we hope to work on in 2024. More soon.
+
+
+Thanks,  
+Carlos Ortega  
+Open Patterson Lead  
+---
+____
+Originally published as an update on Open Collective. You can see that [here](https://opencollective.com/openpatterson/updates/finishing-up-2023-and-looking-ahead).
