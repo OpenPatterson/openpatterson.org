@@ -1,0 +1,7 @@
+{
+  "/about/page": "app/about/page.js",
+  "/process/page": "app/process/page.js",
+  "/work/family-fund/page": "app/work/family-fund/page.js",
+  "/blog/future-of-web-development/page": "app/blog/future-of-web-development/page.js",
+  "/page": "app/page.js"
+}

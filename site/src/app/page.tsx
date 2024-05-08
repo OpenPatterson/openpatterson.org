@@ -9,36 +9,36 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
+// import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
+// import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
+// import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
+// import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
+// import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
+// import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+// import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  // ['Family Fund', logoFamilyFund],
+  // ['Unseal', logoUnseal],
+  // ['Mail Smirk', logoMailSmirk],
+  // ['Home Work', logoHomeWork],
+  // ['Green Life', logoGreenLife],
+  // ['Bright Path', logoBrightPath],
+  // ['North Adventures', logoNorthAdventures],
 ]
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 rounded-4xl bg-orange-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We’ve worked with many amazing people
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -73,9 +73,7 @@ function CaseStudies({
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          We believe technology is a tool, not the solution. We are here to empower the work you already do.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -129,10 +127,6 @@ function Services() {
         title="We help you identify, explore and respond to new opportunities."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
-        </p>
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
@@ -174,7 +168,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'Our nonprofit software studio combines technical expertise with a deep-rooted commitment to community well-being, ensuring that our work leaves a lasting positive impact.',
 }
 
 export default async function Home() {
@@ -185,12 +179,14 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Nonprofit software studio based in California's Central Valley.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Crafting software solutions that empower businesses, civic tech
+            initiatives, and nonprofits to thrive. Our nonprofit software studio
+            combines technical expertise with a deep-rooted commitment to
+            community well-being, ensuring that our work leaves a lasting
+            positive impact.
           </p>
         </FadeIn>
       </Container>
