@@ -1,12 +1,11 @@
 import { type ImageProps } from 'next/image'
 import glob from 'fast-glob'
 
-async function loadEntries<T extends { date: string }>(
+async function loadEntries<T extends { date: string, draft: boolean }>(
   directory: string,
   metaName: string,
 ): Promise<Array<MDXEntry<T>>> {
-  return (
-    await Promise.all(
+  const allEntries = await Promise.all(
       (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
         async (filename) => {
           let metadata = (await import(`../app/${directory}/${filename}`))[
@@ -20,7 +19,12 @@ async function loadEntries<T extends { date: string }>(
         },
       ),
     )
-  ).sort((a, b) => b.date.localeCompare(a.date))
+  
+  const filteredEntries = allEntries.filter((entry) => !entry.metadata.draft)
+  
+  const sortedEntries = filteredEntries.sort((a, b) => b.date.localeCompare(a.date))
+
+  return sortedEntries
 }
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
@@ -28,6 +32,7 @@ type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 export type MDXEntry<T> = T & { href: string; metadata: T }
 
 export interface Article {
+  draft: boolean,
   date: string
   title: string
   description: string
