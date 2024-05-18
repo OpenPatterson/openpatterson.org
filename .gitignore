@@ -26,6 +26,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
@@ -34,3 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 site/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+node_modules
