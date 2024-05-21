@@ -10,45 +10,54 @@ import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
-import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
-import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
 import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="Our Values"
+        title="Balancing our passion for tech with our love for community."
         invert
-      >
-        <p>
-          We are a group of like-minded people who share the same core values.
-        </p>
-      </SectionIntro>
+      ></SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Community" invert>
+            <p>
+              The tech community in Stanislaus County and the Central Valley is
+              still young and scattered. We hope to do our part in nurturing
+              this community by creating community projects and remaining
+              remote-first.
+            </p>
+            <p className="pt-5">
+              Community projects will include volunteer-made civic tech projects
+              produced internally for public use and collaborations with
+              nonprofits.
+            </p>
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Mentorship" invert>
+            <p>
+              Despite how near the Central Valley is to Silicon Valley, the
+              global epicenter of tech, there are very few opportunities for
+              students interested in tech. As a result, students struggle to
+              gain any relevant experience while in college and are later forced
+              to move away after graduating.
+            </p>
+            <p className="pt-5">
+              We strive to create opportunities for students by pairing them
+              with civic tech and non-profit volunteer projects. In doing so, we
+              set them up for success. And in the long run, we hope to prove
+              there is enough tech talent here to convince folks to create their
+              companies here rather than having to move away.
+            </p>
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Simple & Solid Solutions" invert>
+            <p>
+              We are not trying to reinvent the wheel or disguise every solution
+              as the new AI trend. We strive to balance time-tested, solid,
+              simple solutions and the latest tech innovations.
+            </p>
           </GridListItem>
         </GridList>
       </Container>
@@ -61,69 +70,39 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
+        name: 'Carlos E. Ortega',
+        role: 'Founder / CEO',
         image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
       },
     ],
   },
   {
-    title: 'Team',
+    title: 'Advisors',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
+        name: 'Ryan Salmasi',
+        role: 'Marketing Genius',
+        image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Emma Dorsey',
+        name: 'Advisor 2',
         role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
+        image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Leonard Krasner',
+        name: 'Advisor 3',
         role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
+        image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Blake Reid',
+        name: 'Advisor 4',
         role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
+        image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Kathryn Murphy',
+        name: 'Advisor 5',
         role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
+        image: { src: imageLeslieAlexander },
       },
     ],
   },
@@ -189,33 +168,30 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About us" title="Tech as a Tool for Good">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          While many have begun to see technology as an end in itself, we remain
+          rooted in our belief that technology is a tool to empower the work
+          already being done.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
-          </p>
-          <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            We want to create technical opportunities for young people in Stanislaus
+            County by crafting software solutions that empower businesses, civic
+            tech initiatives, and nonprofits to thrive. Our nonprofit software
+            studio combines technical expertise with a deep-rooted commitment to
+            community well-being and mentorship, ensuring our work has a lasting
+            positive impact.
           </p>
         </div>
       </PageIntro>
-      <Container className="mt-16">
+      {/* <Container className="mt-16">
         <StatList>
           <StatListItem value="35" label="Underpaid employees" />
           <StatListItem value="52" label="Placated clients" />
           <StatListItem value="$25M" label="Invoices billed" />
         </StatList>
-      </Container>
+      </Container> */}
 
       <Culture />
 
@@ -224,7 +200,7 @@ export default async function About() {
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        intro="Stay up-to-date with the work our team is doing and what we are learning."
         pages={blogArticles}
       />
 
