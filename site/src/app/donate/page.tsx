@@ -22,7 +22,7 @@ export default async function About() {
         <p>
           We believe technology is the greatest tool to empower the work members
           in our community do. Help us be able to support more pro-bono
-          projects. We're a 501(c)(3) nonprofit, and your donation is
+          projects. We&apos;re a 501(c)(3) nonprofit, and your donation is
           tax-deductible.
         </p>
         <p>If you prefer to donate directly through HackClub (our fiscal sponsor), you can <a href="https://hcb.hackclub.com/donations/start/open-patterson?amount=10000" className="underline" target='_blank'>click here!</a></p>
@@ -43,7 +43,7 @@ export default async function About() {
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        intro="Stay up-to-date with the work our team is doing and what we are learning."
         pages={blogArticles}
       />
 

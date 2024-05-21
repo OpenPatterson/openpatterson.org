@@ -9,27 +9,13 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-// import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-// import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-// import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-// import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-// import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-// import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-// import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoCHSWhite from '@/images/clients/chs/chs-logo-white.png'
+import logoCHSBlack from '@/images/clients/chs/chs-logo-black.png'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  // ['Family Fund', logoFamilyFund],
-  // ['Unseal', logoUnseal],
-  // ['Mail Smirk', logoMailSmirk],
-  // ['Home Work', logoHomeWork],
-  // ['Green Life', logoGreenLife],
-  // ['Bright Path', logoBrightPath],
-  // ['North Adventures', logoNorthAdventures],
+  ['CHS', logoCHSWhite],
 ]
 
 function Clients() {
@@ -73,7 +59,8 @@ function CaseStudies({
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is a tool, not the solution. We are here to empower the work you already do.
+          We believe technology is a tool, not the solution. We are here to
+          empower the work you already do.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -126,8 +113,7 @@ function Services() {
         eyebrow="Services"
         title="We help you identify, explore and respond to new opportunities."
         className="mt-24 sm:mt-32 lg:mt-40"
-      >
-      </SectionIntro>
+      ></SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
@@ -141,23 +127,30 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+              We specialize in creating high-quality, visually appealing, and
+              responsive websites that effectively communicate your brand
+              message. Our web development services are tailored to ensure your
+              website is not only aesthetically pleasing but also functionally
+              efficient and SEO-friendly.
             </ListItem>
             <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+              Our team of skilled developers leverage the latest technologies
+              and frameworks to build robust, scalable, and user-friendly
+              applications. We focus on delivering solutions that meet your
+              unique business needs and provide an exceptional user experience.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Data Analytics & Warehousing">
+              Our data analytics and warehousing services help you make
+              data-driven decisions by providing actionable insights. We design
+              and implement efficient data warehousing solutions that ensure
+              your data is reliable, secure, and accessible for analysis.
             </ListItem>
             <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+              We understand the importance of effective content management, and
+              offer customized CMS solutions that are robust and easy to manage.
+              Our CMS solutions are designed to streamline your content
+              management process, making it easier for you to update and
+              maintain your website content.
             </ListItem>
           </List>
         </div>
@@ -179,7 +172,7 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Nonprofit software studio based in California's Central Valley.
+            Nonprofit software studio based in California&apos;s Central Valley.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             Crafting software solutions that empower businesses, civic tech
@@ -193,15 +186,13 @@ export default async function Home() {
 
       <Clients />
 
-      <CaseStudies caseStudies={caseStudies} />
+      {/* <CaseStudies caseStudies={caseStudies} /> */}
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Phobia', logo: logoCHSBlack }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        CHS pls say something nice about me.
       </Testimonial>
 
       <Services />
