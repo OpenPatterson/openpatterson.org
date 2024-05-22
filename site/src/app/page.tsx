@@ -186,7 +186,7 @@ export default async function Home() {
 
       <Clients />
 
-      {/* <CaseStudies caseStudies={caseStudies} /> */}
+      <CaseStudies caseStudies={caseStudies} />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
