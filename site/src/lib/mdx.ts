@@ -44,6 +44,7 @@ export interface Article {
 }
 
 export interface CaseStudy {
+  draft: boolean
   date: string
   client: string
   title: string

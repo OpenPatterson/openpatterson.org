@@ -190,7 +190,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoCHSBlack }}
+        client={{ name: 'CHS', logo: logoCHSBlack }}
       >
         CHS pls say something nice about me.
       </Testimonial>
