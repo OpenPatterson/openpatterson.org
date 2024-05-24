@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
+import { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
 import { Blockquote } from '@/components/Blockquote'
@@ -89,7 +90,7 @@ function CaseStudies({
   )
 }
 
-const clients = [
+const clients: [string, StaticImageData][] = [
   ['CHS', logoCHSDark],
 ]
 

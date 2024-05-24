@@ -64,7 +64,7 @@ function ContactForm() {
   const [businessType, setBusinessType] = useState('');
   const [buttonLabel, setButtonLabel] = useState("Let’s work together");
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setButtonLabel("Sending...")
 
@@ -98,20 +98,20 @@ function ContactForm() {
           Work inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" />
+          <TextInput label="Name" name="name" value={name} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)} autoComplete="name" />
           <TextInput
             label="Email"
             type="email"
             name="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
             autoComplete="email"
           />
           <TextInput
             label="Company"
             name="company"
             value={company}
-            onChange={(e) => setCompany(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCompany(e.target.value)}
             autoComplete="organization"
           />
           <TextInput
@@ -119,14 +119,14 @@ function ContactForm() {
             type="tel"
             name="phone"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPhone(e.target.value)}
             autoComplete="tel"
           />
           <TextInput
             label="Message"
             name="message"
             value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMessage(e.target.value)}
           />
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>

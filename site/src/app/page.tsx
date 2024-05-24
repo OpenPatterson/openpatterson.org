@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
+import { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
 import { ContactSection } from '@/components/ContactSection'
@@ -14,7 +15,7 @@ import logoCHSBlack from '@/images/clients/chs/chs-logo-black.png'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
-const clients = [
+const clients: [string, StaticImageData][] = [
   ['CHS', logoCHSWhite],
 ]
 
