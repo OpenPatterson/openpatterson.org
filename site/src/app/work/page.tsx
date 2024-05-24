@@ -138,7 +138,7 @@ export default async function Work() {
         title="Proven solutions for real-world problems."
       >
         <p>
-          We're not here to reinvent the wheel. We're here to make it spin.
+          We&apos;re not here to reinvent the wheel. We&apos;re here to make it spin.
         </p>
       </PageIntro>
 

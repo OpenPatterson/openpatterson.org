@@ -245,7 +245,7 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
-          We aren't here to reinvent the wheel, we're here to spin it.
+          We aren&apos;t here to reinvent the wheel, we&apos;re here to spin it.
         </p>
       </PageIntro>
 
