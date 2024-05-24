@@ -10,7 +10,17 @@ import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
 
-function TextInput({ label, ...props }) {
+interface TextInputProps {
+  label: string;
+  [key: string]: any;
+}
+
+interface RadioInputProps {
+  label: string;
+  [key: string]: any;
+}
+
+function TextInput({ label, ...props }: TextInputProps) {
   let id = useId();
 
   return (
@@ -32,7 +42,7 @@ function TextInput({ label, ...props }) {
   );
 }
 
-function RadioInput({ label, ...props }) {
+function RadioInput({ label, ...props }: RadioInputProps) {
   return (
     <label className="flex gap-x-3">
       <input
