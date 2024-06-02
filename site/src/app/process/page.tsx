@@ -194,39 +194,31 @@ function Values() {
         title="Balancing reliability and innovation"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          We strive for a balance between tried-and-true methods and innovative
+          ones. Our priority is to provide a modern solution that is both
+          reliable and efficient.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem title="Simple">
+            Our solutions prioritize simplicity, ensuring they are easy to
+            understand and use. We believe in cutting through complexity to
+            deliver straightforward and effective results that minimize user
+            effort and maximize productivity.
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+          <GridListItem title="Maintainable">
+            We design with long-term sustainability in mind, crafting solutions
+            that are easy to maintain and update. Our approach emphasizes clean
+            code, clear documentation, and scalable architectures to ensure
+            ongoing reliability and ease of enhancement.
           </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
-          </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
-          </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
-          </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+          <GridListItem title="Modern">
+            We incorporate modern tools and methodologies that have been proven
+            to be effective. Our solutions leverage current technologies to
+            offer superior performance, enhanced security, and an intuitive user
+            experience.
           </GridListItem>
         </GridList>
       </Container>
@@ -237,7 +229,7 @@ function Values() {
 export const metadata: Metadata = {
   title: 'Our Process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Our priority is to provide a modern solution that is both reliable and efficient.',
 }
 
 export default function Process() {
