@@ -9,9 +9,8 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'BPCS', href: '/work/bpcs' },
+      { title: 'CHS', href: '/work/chs' },
       {
         title: (
           <>
