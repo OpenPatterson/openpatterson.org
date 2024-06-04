@@ -24,7 +24,6 @@ export async function POST(request: Request) {
       return Response.json({ error }, { status: 500 })
     }
 
-    console.timeLog(email, "Signed up")
     return Response.json(data)
   } catch (error) {
     return new Response(JSON.stringify({ error }), {
