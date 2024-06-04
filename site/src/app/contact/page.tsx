@@ -86,7 +86,7 @@ function ContactForm() {
     if (response.ok) {
       setButtonLabel("Submission sent");
     } else {
-      setButtonLabel("Submission failed");
+      setButtonLabel("Submission failed. Make sure to include phone and/or email");
       console.error(result.error);
     }
   };

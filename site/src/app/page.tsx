@@ -189,12 +189,13 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'CHS', logo: logoCHSBlack }}
       >
         CHS pls say something nice about me.
-      </Testimonial>
+      </Testimonial> */} 
+      {/* TODO: Uncomment this code to display the testimonial after getting the testimonial from CHS  */}
 
       <Services />
 

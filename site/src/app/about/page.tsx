@@ -11,6 +11,8 @@ import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
+import imageRyanSalmasi from '@/images/team/ryan-salmasi.jpg'
+import imageCarlosOrtega from '@/images/team/carlos-ortega.jpeg'
 import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
@@ -72,7 +74,8 @@ const team = [
       {
         name: 'Carlos E. Ortega',
         role: 'Founder / CEO',
-        image: { src: imageLeslieAlexander },
+        image: { src: imageCarlosOrtega },
+        link: 'https://www.carlos.soy/'
       },
     ],
   },
@@ -81,28 +84,9 @@ const team = [
     people: [
       {
         name: 'Ryan Salmasi',
-        role: 'Marketing Genius',
-        image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Advisor 2',
-        role: 'Senior Designer',
-        image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Advisor 3',
-        role: 'VP, User Experience',
-        image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Advisor 4',
-        role: 'Junior Copywriter',
-        image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Advisor 5',
-        role: 'VP, Human Resources',
-        image: { src: imageLeslieAlexander },
+        role: 'Product Advisor',
+        image: { src: imageRyanSalmasi },
+        link: 'https://www.linkedin.com/in/ryansalmasi/'
       },
     ],
   },
@@ -128,6 +112,7 @@ function Team() {
                 >
                   {group.people.map((person) => (
                     <li key={person.name}>
+                      <a href={person.link} className="block" target='_blank'>
                       <FadeIn>
                         <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                           <Image
@@ -145,6 +130,7 @@ function Team() {
                           </div>
                         </div>
                       </FadeIn>
+                      </a>
                     </li>
                   ))}
                 </ul>
