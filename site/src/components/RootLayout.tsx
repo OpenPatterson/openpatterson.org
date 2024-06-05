@@ -9,6 +9,7 @@ import {
   useState,
 } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
@@ -17,7 +18,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
-import { Logo, Logomark } from '@/components/Logo'
+import OpenPattersonLogo from '@/images/OpenPatterson/OpenPattersonLogo.png'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 
@@ -58,27 +59,15 @@ function Header({
   toggleRef: React.RefObject<HTMLButtonElement>
   invert?: boolean
 }) {
-  let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
-
   return (
     <Container>
       <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          aria-label="Home"
-          onMouseEnter={() => setLogoHovered(true)}
-          onMouseLeave={() => setLogoHovered(false)}
-        >
-          <Logomark
-            className="h-8 sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          />
-          <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          />
+        <Link href="/" aria-label="Home">
+          <Image
+            src={OpenPattersonLogo}
+            alt="Open Patterson Logo"
+            className='h-20 w-20'
+          ></Image>
         </Link>
         <div className="flex items-center gap-x-4">
           <Button href="/contact" invert={invert}>
@@ -108,7 +97,6 @@ function Header({
               )}
             />
           </button>
-          
         </div>
       </div>
     </Container>
@@ -199,8 +187,8 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             expanded={expanded}
             onToggle={() => {
               setExpanded((expanded) => !expanded)
-              window.setTimeout(
-                () => closeRef.current?.focus({ preventScroll: true }),
+              window.setTimeout(() =>
+                closeRef.current?.focus({ preventScroll: true }),
               )
             }}
           />
@@ -225,8 +213,8 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 expanded={expanded}
                 onToggle={() => {
                   setExpanded((expanded) => !expanded)
-                  window.setTimeout(
-                    () => openRef.current?.focus({ preventScroll: true }),
+                  window.setTimeout(() =>
+                    openRef.current?.focus({ preventScroll: true }),
                   )
                 }}
               />
@@ -234,11 +222,10 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             <Navigation />
             <div className="relative bg-orange-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-orange-800">
               <Container>
-                <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 place-items-center sm:pt-16">
-                  <div>
-                  </div>
+                <div className="grid grid-cols-1 place-items-center gap-y-10 pb-16 pt-10 sm:pt-16">
+                  <div></div>
                   <div className="sm:border-l sm:border-transparent">
-                    <h2 className="font-display text-base font-semibold text-white text-center">
+                    <h2 className="text-center font-display text-base font-semibold text-white">
                       Follow us
                     </h2>
                     <SocialMedia className="mt-6" invert />
