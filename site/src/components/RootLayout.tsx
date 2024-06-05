@@ -22,6 +22,7 @@ import OpenPattersonLogo from '@/images/OpenPatterson/OpenPattersonLogo.png'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -256,6 +257,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           <main className="w-full flex-auto">
             {children}
             <Analytics />
+            <SpeedInsights />
           </main>
 
           <Footer />
