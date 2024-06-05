@@ -21,6 +21,7 @@ import { GridPattern } from '@/components/GridPattern'
 import OpenPattersonLogo from '@/images/OpenPatterson/OpenPattersonLogo.png'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import { Analytics } from '@vercel/analytics/react'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -66,7 +67,7 @@ function Header({
           <Image
             src={OpenPattersonLogo}
             alt="Open Patterson Logo"
-            className='h-20 w-20'
+            className="h-20 w-20"
           ></Image>
         </Link>
         <div className="flex items-center gap-x-4">
@@ -252,7 +253,10 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             interactive
           />
 
-          <main className="w-full flex-auto">{children}</main>
+          <main className="w-full flex-auto">
+            {children}
+            <Analytics />
+          </main>
 
           <Footer />
         </motion.div>
