@@ -13,8 +13,8 @@ interface TeamMemberProps {
 
 export function TeamMember({ name, role, image, bio, links }: TeamMemberProps) {
   return (
-    <div className="border border-primary/20 p-6 hover:border-primary transition-colors bg-card text-card-foreground">
-      <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-primary">
+    <div className="border border-primary/20 p-6 hover:border-primary transition-colors bg-card text-card-foreground text-center">
+      <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-primary mx-auto">
         <Image src={image || "/placeholder.svg"} alt={name} width={128} height={128} className="object-cover" />
       </div>
       <h3 className="text-xl font-bold mb-1">{name}</h3>
