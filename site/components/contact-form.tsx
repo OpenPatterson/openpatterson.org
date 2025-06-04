@@ -16,6 +16,7 @@ export function ContactForm() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -25,16 +26,30 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(null)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      })
 
-    // In a real application, you would send the form data to your backend
-    console.log("Form submitted:", formState)
+      const data = await response.json()
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormState({ name: "", email: "", message: "" })
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message')
+      }
+
+      setIsSubmitted(true)
+      setFormState({ name: "", email: "", message: "" })
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to send message')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -51,6 +66,12 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 border border-primary/20 p-6 bg-card">
+      {error && (
+        <div className="p-4 text-sm text-red-500 bg-red-50 border border-red-200 rounded">
+          {error}
+        </div>
+      )}
+      
       <div>
         <label htmlFor="name" className="block mb-2 font-medium text-card-foreground">
           Name

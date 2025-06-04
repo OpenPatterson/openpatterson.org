@@ -1,10 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { MobileMenu } from "@/components/mobile-menu";
 
-export function header() {
+export function Header() {
+  const pathname = usePathname();
   const navItems = [
     { href: "/#about", label: "About" },
     { href: "/projects", label: "Projects" },
@@ -36,7 +40,7 @@ export function header() {
                 <Link
                   href={item.href}
                   className={`hover:underline ${
-                    item.href === "/blog" ? "font-bold" : ""
+                    pathname?.startsWith(item.href.replace("#", "")) ? "font-bold" : ""
                   }`}
                 >
                   {item.label}

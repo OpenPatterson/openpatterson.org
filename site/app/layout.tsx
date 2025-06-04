@@ -2,7 +2,7 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter, Space_Mono } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
-import { header } from "@/components/header"
+import { Header } from "@/components/header"
 import { footer } from "@/components/footer"
 
 const inter = Inter({
@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${spaceMono.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {header()}
+          <Header />
           {children}
           {footer()}
         </ThemeProvider>
