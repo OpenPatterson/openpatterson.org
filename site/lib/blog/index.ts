@@ -5,7 +5,6 @@ import {
   getFeaturedBlogPosts,
   getBlogCategories,
   getBlogPostsByCategory,
-  searchBlogPosts,
 } from "@/lib/mdx"
 
 // Get all blog posts sorted by date (newest first)
@@ -22,8 +21,5 @@ export const getAllCategories = getBlogCategories
 
 // Get posts by category
 export const getPostsByCategory = getBlogPostsByCategory
-
-// Search posts
-export const searchPosts = searchBlogPosts
 
 export type { BlogPost }

@@ -6,7 +6,6 @@ import { BlogCategories } from "@/components/blog-categories"
 import dynamic from "next/dynamic"
 
 // Import client components with dynamic imports
-const BlogSearch = dynamic(() => import("@/components/blog-search").then((mod) => mod.BlogSearch), { ssr: false })
 const MobileMenu = dynamic(() => import("@/components/mobile-menu").then((mod) => mod.MobileMenu), { ssr: false })
 const LanguageSwitcher = dynamic(() => import("@/components/language-switcher").then((mod) => mod.LanguageSwitcher), {
   ssr: false,
@@ -41,7 +40,6 @@ export default async function BlogPage() {
 
             <div className="md:w-1/4">
               <div className="sticky top-8">
-                <BlogSearch />
                 <div className="mt-8">
                   <h2 className="text-xl font-bold mb-4">Categories</h2>
                   <BlogCategories categories={categories} />

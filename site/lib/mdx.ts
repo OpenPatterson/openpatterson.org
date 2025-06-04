@@ -61,24 +61,6 @@ export async function getBlogPostsByCategory(category: string): Promise<BlogPost
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
-export async function searchBlogPosts(query: string): Promise<BlogPost[]> {
-  if (!query || query.trim() === "") {
-    return []
-  }
-
-  const posts = await getBlogPosts()
-  const searchTerm = query.toLowerCase()
-
-  return posts
-    .filter(
-      (post) =>
-        post.title.toLowerCase().includes(searchTerm) ||
-        post.excerpt.toLowerCase().includes(searchTerm) ||
-        post.content.toLowerCase().includes(searchTerm) ||
-        post.category.toLowerCase().includes(searchTerm),
-    )
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-}
 
 // Project functions
 export async function getProjects(): Promise<Project[]> {
