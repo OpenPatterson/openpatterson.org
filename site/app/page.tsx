@@ -1,77 +1,34 @@
-import { ContactForm } from "@/components/contact-form"
-import { BlogPreview } from "@/components/blog-preview"
-import { Code } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
-import { getFeaturedPosts } from "@/lib/blog"
-import { getFeaturedProjects } from "@/lib/projects"
-import { ProjectCard } from "@/components/project-card"
-import { TeamMember } from "@/components/team-member"
-import { MobileMenu } from "@/components/mobile-menu"
-import { LanguageSwitcher } from "@/components/language-switcher"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { ContactForm } from "@/components/contact-form";
+import { BlogPreview } from "@/components/blog-preview";
+import { Code } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { getFeaturedPosts } from "@/lib/blog";
+import { getFeaturedProjects } from "@/lib/projects";
+import { ProjectCard } from "@/components/project-card";
+import { TeamMember } from "@/components/team-member";
+import { MobileMenu } from "@/components/mobile-menu";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default async function Home() {
-  const featuredPosts = await getFeaturedPosts(2)
-  const featuredProjects = await getFeaturedProjects(2)
+  const featuredPosts = await getFeaturedPosts(2);
+  const featuredProjects = await getFeaturedProjects(2);
 
-  const navItems = [
-    { href: "#about", label: "About" },
-    { href: "/projects", label: "Projects" },
-    { href: "#team", label: "Team" },
-    { href: "/blog", label: "Blog" },
-    { href: "#contact", label: "Contact" },
-  ]
+
 
   return (
     <div className="min-h-screen font-mono flex flex-col">
-      <header className="border-b py-6">
-        <div className="container mx-auto px-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Image src="/images/logo.png" alt="Open Patterson Logo" width={40} height={40} />
-            <h1 className="text-xl font-bold tracking-tight">Open Patterson</h1>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center">
-            <ul className="flex gap-6 mr-6">
-              {navItems.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="hover:underline">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="flex items-center gap-3">
-              <ThemeToggle />
-              <LanguageSwitcher />
-              <a
-                href="https://hcb.hackclub.com/donations/start/open-patterson?amount=10000"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-primary text-white font-medium rounded-md hover:bg-primary/90 transition-colors"
-              >
-                Donate
-              </a>
-            </div>
-          </nav>
-
-          {/* Mobile Navigation */}
-          <div className="lg:hidden flex items-center gap-2">
-            <ThemeToggle />
-            <LanguageSwitcher isMobile />
-            <MobileMenu items={navItems} donateLabel="Donate" />
-          </div>
-        </div>
-      </header>
 
       <main className="flex-1">
         <section id="hero" className="py-20 border-b">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Volunteer-Run Nonprofit Software Studio</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Volunteer-Run Nonprofit Software Studio
+            </h2>
             <p className="max-w-2xl mx-auto text-lg mb-8">
-              Building open source technology to empower local governments and civic initiatives.
+              Building open source technology to empower local governments and
+              civic initiatives.
             </p>
             <Link
               href="https://github.com/openpatterson"
@@ -93,15 +50,26 @@ export default async function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="border border-primary/20 p-6 hover:border-primary transition-colors">
                 <h3 className="text-xl font-bold mb-4">Civic Projects</h3>
-                <p>We develop open source solutions that address community needs and improve civic engagement.</p>
+                <p>
+                  We develop open source solutions that address community needs
+                  and improve civic engagement.
+                </p>
               </div>
               <div className="border border-primary/20 p-6 hover:border-primary transition-colors">
                 <h3 className="text-xl font-bold mb-4">Nonprofit Support</h3>
-                <p>We partner with nonprofits to build custom software that amplifies their impact and reach.</p>
+                <p>
+                  We partner with nonprofits to build custom software that
+                  amplifies their impact and reach.
+                </p>
               </div>
               <div className="border border-primary/20 p-6 hover:border-primary transition-colors">
-                <h3 className="text-xl font-bold mb-4">Government Collaboration</h3>
-                <p>We work with local governments to modernize services and improve accessibility for all citizens.</p>
+                <h3 className="text-xl font-bold mb-4">
+                  Government Collaboration
+                </h3>
+                <p>
+                  We work with local governments to modernize services and
+                  improve accessibility for all citizens.
+                </p>
               </div>
             </div>
           </div>
@@ -139,20 +107,38 @@ export default async function Home() {
                 role="Founder"
                 image="/images/team/carlos-ortega.jpeg"
                 bio="Founder of Open Patterson, passionate about using technology to improve civic engagement and government services."
+                links={[
+                  {
+                    label: "LinkedIn",
+                    url: "https://www.linkedin.com/in/soycarlos/",
+                  },
+                  {
+                    label: "Personal Website",
+                    url: "https://www.carlos.soy/",
+                  },
+                ]}
               />
               <TeamMember
                 name="Ryan Salmasi"
-                role="Technical Advisor"
+                role="Advisor"
                 image="/images/team/ryan-salmasi.jpg"
-                bio="Providing strategic guidance and technical expertise to help Open Patterson achieve its mission."
+                bio="Providing strategic guidance to help Open Patterson achieve its mission."
+                links={[
+                  {
+                    label: "LinkedIn",
+                    url: "https://www.linkedin.com/in/ryansalmasi/",
+                  },
+                ]}
               />
+
               <div className="border border-dashed border-primary p-6 flex flex-col items-center justify-center text-center h-full">
                 <div className="w-32 h-32 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <span className="text-4xl">👋</span>
                 </div>
                 <h3 className="text-xl font-bold mb-2">This could be you</h3>
                 <p className="text-gray-600 mb-4">
-                  We're looking for passionate volunteers to join our team and help build technology for public good.
+                  We're looking for passionate volunteers to join our team and
+                  help build technology for public good.
                 </p>
                 <Link
                   href="#contact"
@@ -193,8 +179,8 @@ export default async function Home() {
             </h2>
             <div className="max-w-xl mx-auto">
               <p className="mb-8">
-                Interested in volunteering, partnering, or learning more about our work? Send us a message and we'll get
-                back to you soon.
+                Interested in volunteering, partnering, or learning more about
+                our work? Send us a message and we'll get back to you soon.
               </p>
               <ContactForm />
             </div>
@@ -202,17 +188,6 @@ export default async function Home() {
         </section>
       </main>
 
-      <footer className="py-8 border-t text-center">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-center mb-4">
-            <Image src="/images/logo.png" alt="Open Patterson Logo" width={50} height={50} />
-          </div>
-          <p className="mb-4">Made with 🍑 in Patterson</p>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Open Patterson. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
-  )
+  );
 }
