@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { LanguageSwitcher } from "@/components/language-switcher";
+// import { LanguageSwitcher } from "@/components/language-switcher";
 import { MobileMenu } from "@/components/mobile-menu";
 
 export function Header() {
@@ -50,7 +50,7 @@ export function Header() {
           </ul>
           <div className="flex items-center gap-3">
             <ThemeToggle />
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
             <a
               href="https://hcb.hackclub.com/donations/start/open-patterson?amount=10000"
               target="_blank"
