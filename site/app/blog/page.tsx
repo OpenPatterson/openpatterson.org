@@ -6,11 +6,9 @@ import { BlogCategories } from "@/components/blog-categories"
 import dynamic from "next/dynamic"
 
 // Import client components with dynamic imports
-const MobileMenu = dynamic(() => import("@/components/mobile-menu").then((mod) => mod.MobileMenu), { ssr: false })
-const LanguageSwitcher = dynamic(() => import("@/components/language-switcher").then((mod) => mod.LanguageSwitcher), {
-  ssr: false,
-})
-const ThemeToggle = dynamic(() => import("@/components/theme-toggle").then((mod) => mod.ThemeToggle), { ssr: false })
+const MobileMenu = dynamic(() => import("@/components/mobile-menu").then((mod) => mod.MobileMenu))
+const LanguageSwitcher = dynamic(() => import("@/components/language-switcher").then((mod) => mod.LanguageSwitcher))
+const ThemeToggle = dynamic(() => import("@/components/theme-toggle").then((mod) => mod.ThemeToggle))
 
 export const metadata = {
   title: "Blog | Open Patterson",

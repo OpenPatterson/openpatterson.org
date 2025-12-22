@@ -7,10 +7,8 @@ import { MobileMenu } from "@/components/mobile-menu"
 import dynamic from "next/dynamic"
 
 // Import client components with dynamic imports
-const LanguageSwitcher = dynamic(() => import("@/components/language-switcher").then((mod) => mod.LanguageSwitcher), {
-  ssr: false,
-})
-const ThemeToggle = dynamic(() => import("@/components/theme-toggle").then((mod) => mod.ThemeToggle), { ssr: false })
+const LanguageSwitcher = dynamic(() => import("@/components/language-switcher").then((mod) => mod.LanguageSwitcher))
+const ThemeToggle = dynamic(() => import("@/components/theme-toggle").then((mod) => mod.ThemeToggle))
 
 export default async function CategoryPage({ params }: { params: { category: string } }) {
   const category = params.category
