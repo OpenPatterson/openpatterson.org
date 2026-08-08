@@ -11,8 +11,8 @@ const LanguageSwitcher = dynamic(() => import("@/components/language-switcher").
 const ThemeToggle = dynamic(() => import("@/components/theme-toggle").then((mod) => mod.ThemeToggle))
 
 export const metadata = {
-  title: "Blog | Central Valley Civic Tech",
-  description: "Latest news, updates, and insights from the Central Valley Civic Tech team",
+  title: "Blog | Open Patterson",
+  description: "Latest news, updates, and insights from the Open Patterson team",
 }
 
 export default async function BlogPage() {

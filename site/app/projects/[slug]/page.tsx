@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!project) {
     return {
-      title: "Project Not Found | Central Valley Civic Tech",
+      title: "Project Not Found | Open Patterson",
     }
   }
 
   return {
-    title: `${project.title} | Central Valley Civic Tech Projects`,
+    title: `${project.title} | Open Patterson Projects`,
     description: project.description,
   }
 }

@@ -23,12 +23,12 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Image
             src="/images/logo.png"
-            alt="Central Valley Civic Tech Logo"
+            alt="Open Patterson Logo"
             width={40}
             height={40}
           />
           <Link href="/" className="text-xl font-bold tracking-tight">
-            Central Valley Civic Tech
+            Open Patterson
           </Link>
         </div>
 

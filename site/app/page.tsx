@@ -106,7 +106,7 @@ export default async function Home() {
                 name="Carlos Ortega"
                 role="Founder"
                 image="/images/team/carlos-ortega.jpeg"
-                bio="Founder of Central Valley Civic Tech, passionate about using technology to improve civic engagement and government services."
+                bio="Founder of Open Patterson, passionate about using technology to improve civic engagement and government services."
                 links={[
                   {
                     label: "LinkedIn",
@@ -122,7 +122,7 @@ export default async function Home() {
                 name="Ryan Salmasi"
                 role="Advisor"
                 image="/images/team/ryan-salmasi.jpg"
-                bio="Providing strategic guidance to help Central Valley Civic Tech achieve its mission."
+                bio="Providing strategic guidance to help Open Patterson achieve its mission."
                 links={[
                   {
                     label: "LinkedIn",

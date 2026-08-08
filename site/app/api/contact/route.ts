@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     const { name, email, message } = await request.json();
 
     const data = await resend.emails.send({
-      from: "Central Valley Civic Tech Contact Form <contact@openpatterson.org>",
+      from: "Open Patterson Contact Form <contact@openpatterson.org>",
       to: ["contact@openpatterson.org"],
       subject: `New Contact Form Submission from ${name}`,
       replyTo: email,
