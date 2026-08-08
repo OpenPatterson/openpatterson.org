@@ -7,8 +7,8 @@ import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export const metadata = {
-  title: "Projects | Open Patterson",
-  description: "Explore the civic technology projects developed by Open Patterson",
+  title: "Projects | Central Valley Civic Tech",
+  description: "Explore the civic technology projects developed by Central Valley Civic Tech",
 }
 
 export default async function ProjectsPage() {

@@ -17,7 +17,7 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata = {
-  title: "Open Patterson - Nonprofit Software Studio",
+  title: "Central Valley Civic Tech - Nonprofit Software Studio",
   description:
     "A volunteer-run nonprofit software studio working with local governments and pushing civic tech initiatives.",
   icons: {

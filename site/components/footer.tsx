@@ -8,7 +8,7 @@ export function footer() {
           <div className="flex justify-center mb-4">
             <Image
               src="/images/logo.png"
-              alt="Open Patterson Logo"
+              alt="Central Valley Civic Tech Logo"
               width={50}
               height={50}
             />
@@ -51,7 +51,7 @@ export function footer() {
           </div>
           <p className="mb-4">Made with 🍑 in Patterson</p>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Open Patterson. All rights reserved.
+            © {new Date().getFullYear()} Central Valley Civic Tech. All rights reserved.
           </p>
         </div>
       </footer>
